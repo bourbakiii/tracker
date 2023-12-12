@@ -17,6 +17,14 @@ const routes = [
         },
         component: () => import('@/pages/Login.vue')
     },
+    {
+        path: '/projects',
+        name: 'Projects',
+        meta:{
+            layout: 'sidebar-layout',
+        },
+        component: () => import('@/pages/Projects.vue')
+    },
 ];
 const router = createRouter({
     history: createWebHistory(),

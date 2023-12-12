@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import flowbitePlugin from 'flowbite/plugin'
 export default {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content : ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}',  "./node_modules/flowbite/**/*.js"],
   darkMode: true,
-  content: [],
   theme: {
     extend: {
       gap:{
@@ -13,6 +13,6 @@ export default {
       }
     },
   },
-  plugins: [],
-}
 
+  plugins: [ flowbitePlugin]
+}
